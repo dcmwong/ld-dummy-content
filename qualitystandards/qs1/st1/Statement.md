@@ -1,16 +1,12 @@
-
 ```
-Setting:
-  - "Hospital"
+Age Group:
+    - "Adults"
 ```
-Quality statement 1: Test Quality statement
-------------------------------------------------
+This is the title 
+----------------------------------------------
 
-### Quality statement 
+### Abstract 
 
-This is the abstract
+This is the abstract.
 
-This is some content
-
-
-This is a test statement
+This is some content.
