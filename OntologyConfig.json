@@ -1,0 +1,114 @@
+﻿
+{
+	"SchemaBase": "http://schema/ns/",
+	"UriBase": "http://ld.nice.org.uk/ns/qualitystandard",
+	"IndexName": "kb",
+    "TypeName": "qualitystatement"
+	"SchemaDetails":
+	[
+		{
+			"Schema": "qualitystandard/setting.ttl",
+			"JsonLD": "qualitystandard/setting.jsonld ",
+			"Publish":
+			[
+				{
+					"Uri": "setting",
+					"PropertyPath":
+					[
+						"^rdfs:subClassOf*"
+					]
+				}
+			]
+		},
+		{
+			"Schema": "qualitystandard/agegroup.ttl",
+			"JsonLD": "qualitystandard/agegroup.jsonld ",
+			"Publish":
+			[
+				{
+					"Uri": "age",
+					"Label": "Age Group",
+					"PropertyPath":
+					[
+						"^rdfs:subClassOf*",
+						"rdfs:subClassOf*"
+					]
+				}
+			]
+			
+		},
+		{
+			"Schema": "qualitystandard/conditionordisease.ttl",
+			"JsonLD": "qualitystandard/conditionordisease.jsonld ",
+			"Publish":
+			[
+				{
+					"Uri": "condition",
+					"Label": "Condition Or Disease",
+					"PropertyPath": 
+					[
+						"^rdfs:subClassOf*",
+						"rdfs:subClassOf*"
+					]
+				}
+			]
+			
+		},
+		{
+			"Schema": "qualitystandard/servicearea.ttl",
+			"JsonLD": "qualitystandard/servicearea.jsonld ",
+			"Publish":
+			[
+				{
+					"Uri": "servicearea",
+					"PropertyPath": 
+					[
+						"^rdfs:subClassOf*"
+					]
+				}
+			]
+			
+		},
+		{
+			"Schema": "qualitystandard/lifestylecondition.ttl",
+			"JsonLD": "qualitystandard/lifestylecondition.jsonld ",
+			"Publish":
+			[
+				{
+					"Uri": "lifestylecondition",
+					"PropertyPath":
+					[
+						"^rdfs:subClassOf*"
+					]
+				}
+			]
+			
+		},
+		{
+			"Schema": "qualitystandard.ttl",
+			"JsonLD": "qualitystandard.jsonld ",
+			"Publish":
+			[
+				{
+					"Uri": "title"
+				},
+				{
+					"Uri": "abstract"
+				},
+				{
+					"Uri": "qsidentifier"
+				},
+				{
+					"Uri": "stidentifier"
+				},
+				{
+					"Uri": "positionalid"
+				},
+				{
+					"Uri": "firstissued"
+				}
+			]
+			
+		}
+	]
+}
