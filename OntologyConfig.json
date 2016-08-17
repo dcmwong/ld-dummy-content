@@ -1,14 +1,17 @@
 ﻿
 {
 	"SchemaBase": "http://schema/ns/",
-	"UriBase": "http://ld.nice.org.uk/ns/qualitystandard",
+	"UrlBase": "http://ld.nice.org.uk/",
+	"QSBase": "ns/qualitystandard",
+	"ThingBase": "resource",
 	"IndexName": "kb",
-    "TypeName": "qualitystatement"
+	"TypeName": "qualitystatement",
 	"SchemaDetails":
 	[
 		{
 			"Schema": "qualitystandard/setting.ttl",
 			"JsonLD": "qualitystandard/setting.jsonld ",
+			"Map": true,
 			"Publish":
 			[
 				{
@@ -23,6 +26,7 @@
 		{
 			"Schema": "qualitystandard/agegroup.ttl",
 			"JsonLD": "qualitystandard/agegroup.jsonld ",
+			"Map": true,
 			"Publish":
 			[
 				{
@@ -40,6 +44,7 @@
 		{
 			"Schema": "qualitystandard/conditionordisease.ttl",
 			"JsonLD": "qualitystandard/conditionordisease.jsonld ",
+			"Map": true,
 			"Publish":
 			[
 				{
@@ -57,6 +62,7 @@
 		{
 			"Schema": "qualitystandard/servicearea.ttl",
 			"JsonLD": "qualitystandard/servicearea.jsonld ",
+			"Map": true,
 			"Publish":
 			[
 				{
@@ -72,6 +78,7 @@
 		{
 			"Schema": "qualitystandard/lifestylecondition.ttl",
 			"JsonLD": "qualitystandard/lifestylecondition.jsonld ",
+			"Map": true,
 			"Publish":
 			[
 				{
@@ -87,6 +94,7 @@
 		{
 			"Schema": "qualitystandard.ttl",
 			"JsonLD": "qualitystandard.jsonld ",
+			"Map": false,
 			"Publish":
 			[
 				{
