@@ -110,10 +110,15 @@
 					"Uri": "stidentifier"
 				},
 				{
-					"Uri": "positionalid"
+					"Uri": "positionalid",
+					"Required": true,
+					"Format": "PositionalId"
 				},
 				{
-					"Uri": "firstissued"
+					"Uri": "firstissued",
+					"Required": true,
+					"Format": "Date",
+					"OutFormatMask": "MMMM yyyy"
 				}
 			]
 			
