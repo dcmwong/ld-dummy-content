@@ -30,7 +30,7 @@
 			"Publish":
 			[
 				{
-					"Uri": "age",
+					"Uri": "agegroup",
 					"Label": "Age Group",
 					"PropertyPath":
 					[
