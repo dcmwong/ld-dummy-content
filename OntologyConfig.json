@@ -30,7 +30,7 @@
 			"Publish":
 			[
 				{
-					"Uri": "agegroup",
+					"Uri": "age",
 					"Label": "Age Group",
 					"PropertyPath":
 					[
@@ -76,7 +76,7 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/factorsaffectinghealthandwellbeing.ttl",
+			"Schema": "qualitystandard/lifestylecondition.ttl",
 			"JsonLD": "qualitystandard/lifestylecondition.jsonld ",
 			"Map": true,
 			"Publish":
