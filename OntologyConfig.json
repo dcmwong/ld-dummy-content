@@ -76,7 +76,7 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/lifestylecondition.ttl",
+			"Schema": "qualitystandard/factorsaffectinghealthandwellbeing.ttl",
 			"JsonLD": "qualitystandard/lifestylecondition.jsonld ",
 			"Map": true,
 			"Publish":
