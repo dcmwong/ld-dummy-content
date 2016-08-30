@@ -118,7 +118,7 @@
 					"Uri": "firstissued",
 					"Required": true,
 					"Format": "Date",
-					"OutFormatMask": "MMMM yyyy"
+					"OutFormatMask": "yyyy-mm-dd"
 				}
 			]
 			
