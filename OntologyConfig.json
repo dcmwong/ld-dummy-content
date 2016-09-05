@@ -110,15 +110,28 @@
 					"Uri": "stidentifier"
 				},
 				{
-					"Uri": "positionalid",
-					"Required": true,
-					"Format": "PositionalId"
+					"Uri": "hasPositionalId",
+					"Label": "PositionalId",
+					"Validate": true,
+					"Format": "PositionalId:Required"
+				}
+				{
+					"Uri": "isNationalPriority",
+					"Label": "National priority",
+					"Validate": true,
+					"Format": "YesNo:Required"
 				},
 				{
-					"Uri": "firstissued",
-					"Required": true,
-					"Format": "Date",
-					"OutFormatMask": "yyyy-MM-dd"
+					"Uri": "changedPriorityOn",
+					"Label": "Changed Priority On",
+					"Validate": true,
+					"Format": "Date:Conditional:National priority:no"
+				},
+				{
+					"Uri": "wasFirstIssuedOn",
+					"Label": "First issued",
+					"Validate": true,
+					"Format": "Date:Required"
 				}
 			]
 			
