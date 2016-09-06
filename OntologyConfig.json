@@ -113,25 +113,37 @@
 					"Uri": "hasPositionalId",
 					"Label": "PositionalId",
 					"Validate": true,
-					"Format": "PositionalId:Required"
+					"Format": "PositionalId:Required",
+                    "Display": false,
+                    "DataAnnotation": true,
+                    "PropertyPath": []
 				},
 				{
 					"Uri": "isNationalPriority",
 					"Label": "National priority",
 					"Validate": true,
-					"Format": "YesNo:Required"
+					"Format": "YesNo:Required",
+					"Display": false,
+					"DataAnnotation": true,
+					"PropertyPath": []
 				},
 				{
 					"Uri": "changedPriorityOn",
 					"Label": "Changed Priority On",
 					"Validate": true,
-					"Format": "Date:Conditional:National priority:no"
+					"Format": "Date:Conditional:National priority:no",
+					"Display": false,
+					"DataAnnotation": true,
+					"PropertyPath": []
 				},
 				{
 					"Uri": "wasFirstIssuedOn",
 					"Label": "First issued",
 					"Validate": true,
-					"Format": "Date:Required"
+					"Format": "Date:Required",
+					"Display": true,
+					"DataAnnotation": true,
+					"PropertyPath": []
 				}
 			]
 			
