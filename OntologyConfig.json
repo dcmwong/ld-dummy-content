@@ -129,7 +129,7 @@
 				},
 				{
 					"Uri": "changedPriorityOn",
-					"Label": "Changed Priority On",
+					"Label": "Priority changed",
 					"Validate": true,
 					"Format": "Date:Conditional:National priority:no",
 					"Display": false,
