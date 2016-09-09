@@ -14,8 +14,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "hasSetting",
-					"Label": "has setting",
+					"Uri": "appliesTo",
+					"Label": "applies to",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
@@ -30,8 +30,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "hasAgeGroup",
-					"Label": "has age group",
+					"Uri": "appliesToAgeGroup",
+					"Label": "age group",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*",
