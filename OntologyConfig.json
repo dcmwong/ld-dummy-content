@@ -65,7 +65,7 @@
 			"Publish":
 			[
 				{
-					"Uri": "serviceArea",
+					"Uri": "servicearea",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*"
