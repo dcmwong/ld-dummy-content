@@ -14,7 +14,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "setting",
+					"Uri": "hasSetting",
+					"Label": "has setting",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
@@ -29,8 +30,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "age",
-					"Label": "Age Group",
+					"Uri": "hasAgeGroup",
+					"Label": "has age group",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*",
@@ -47,8 +48,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "condition",
-					"Label": "Condition Or Disease",
+					"Uri": "hasConditionOrDisease",
+					"Label": "has condition or disease",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*",
@@ -65,7 +66,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "servicearea",
+					"Uri": "hasServiceArea",
+					"Label": "has service area",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*"
@@ -75,13 +77,14 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/lifestylecondition.ttl",
-			"JsonLD": "qualitystandard/lifestylecondition.jsonld ",
+			"Schema": "qualitystandard/factorsaffectinghealthandwellbeing.ttl",
+			"JsonLD": "qualitystandard/factorsaffectinghealthandwellbeing.jsonld ",
 			"Map": true,
 			"Publish":
 			[
 				{
-					"Uri": "lifestylecondition",
+					"Uri": "hasFactorAffectingHealthAndWellbeing",
+					"Label": "has factor affecting health and wellbeing",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
