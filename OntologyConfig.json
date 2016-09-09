@@ -31,7 +31,7 @@
 			[
 				{
 					"Uri": "appliesToAgeGroup",
-					"Label": "age group",
+					"Label": "applies to age group",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*",
