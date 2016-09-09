@@ -48,8 +48,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "hasConditionOrDisease",
-					"Label": "has condition or disease",
+					"Uri": "appliesToConditionOrDisease",
+					"Label": "applies to condition or disease",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*",
@@ -66,8 +66,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "hasServiceArea",
-					"Label": "has service area",
+					"Uri": "appliesToServiceArea",
+					"Label": "applies to service area",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*"
@@ -83,8 +83,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "hasFactorAffectingHealthAndWellbeing",
-					"Label": "has factor affecting health and wellbeing",
+					"Uri": "appliesToLifeStyleConditions",
+					"Label": "applies to lifestyle conditions",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
