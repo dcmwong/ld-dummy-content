@@ -116,36 +116,58 @@
 					"Label": "PositionalId",
 					"Validate": true,
 					"Format": "PositionalId:Required",
-                    "Display": false,
-                    "DataAnnotation": true,
-                    "PropertyPath": []
+					"DataAnnotation": true
+				},
+				{
+					"Uri": "isWithdrawn",
+					"Label": "Withdrawn",
+					"Validate": true,
+					"Format": "YesNo",
+					"DataAnnotation": true,
+					"UndiscoverableWhen": "yes"
+				},
+				{
+					"Uri": "withdrawnOn",
+					"Label": "Withdrawn on",
+					"Validate": true,
+					"Format": "Date:Conditional:Withdrawn:yes",
+					"DataAnnotation": true,
+					"Display": {
+						"Condition": "Withdrawn:yes",
+						"Label": "<div class='withdrawn-label'>This statement has been withdrawn</div>",
+						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }}</div>"
+					}
 				},
 				{
 					"Uri": "isNationalPriority",
 					"Label": "National priority",
 					"Validate": true,
 					"Format": "YesNo:Required",
-					"Display": false,
 					"DataAnnotation": true,
-					"PropertyPath": []
+					"UndiscoverableWhen": "no"
 				},
 				{
 					"Uri": "changedPriorityOn",
 					"Label": "Priority changed",
 					"Validate": true,
 					"Format": "Date:Conditional:National priority:no",
-					"Display": false,
-					"DataAnnotation": true,
-					"PropertyPath": []
+					"Display": {
+						"Condition": "National priority:no",
+						"Label": "National priority",
+						"Template": "<b>In {{value |  date: \"MMMM yyyy\" }} the priority of this statement changed. It is no longer considered a national priority for improvement but may still be useful at a local level.</b>"
+					},
+					"DataAnnotation": true
 				},
 				{
 					"Uri": "wasFirstIssuedOn",
 					"Label": "First issued",
 					"Validate": true,
 					"Format": "Date:Required",
-					"Display": true,
-					"DataAnnotation": true,
-					"PropertyPath": []
+					"Display": 
+					{
+						"Always": true
+					},
+					"DataAnnotation": true
 				}
 			]
 			
