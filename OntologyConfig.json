@@ -1,15 +1,14 @@
 {
-	"SchemaBase": "http://schema/ns/",
-	"UrlBase": "http://ld.nice.org.uk/",
-	"QSBase": "ns/qualitystandard",
-	"ThingBase": "resource",
+	"SchemaBase": "http://schema/ontologies/",
+	"QSBase": "https://nice.org.uk/ontologies/qualitystandard",
+	"ThingBase": "http://ld.nice.org.uk/things",
 	"IndexName": "kb",
 	"TypeName": "qualitystatement",
 	"SchemaDetails":
 	[
 		{
-			"Schema": "qualitystandard/setting.ttl",
-			"JsonLD": "qualitystandard/setting.jsonld ",
+			"Schema": "setting.ttl",
+			"JsonLD": "setting.jsonld ",
 			"Map": true,
 			"Publish":
 			[
@@ -24,8 +23,8 @@
 			]
 		},
 		{
-			"Schema": "qualitystandard/agegroup.ttl",
-			"JsonLD": "qualitystandard/agegroup.jsonld ",
+			"Schema": "agegroup.ttl",
+			"JsonLD": "agegroup.jsonld ",
 			"Map": true,
 			"Publish":
 			[
@@ -42,8 +41,8 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/conditionordisease.ttl",
-			"JsonLD": "qualitystandard/conditionordisease.jsonld ",
+			"Schema": "conditionordisease.ttl",
+			"JsonLD": "conditionordisease.jsonld ",
 			"Map": true,
 			"Publish":
 			[
@@ -60,8 +59,8 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/servicearea.ttl",
-			"JsonLD": "qualitystandard/servicearea.jsonld ",
+			"Schema": "servicearea.ttl",
+			"JsonLD": "servicearea.jsonld ",
 			"Map": true,
 			"Publish":
 			[
@@ -77,14 +76,14 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/factorsaffectinghealthandwellbeing.ttl",
-			"JsonLD": "qualitystandard/factorsaffectinghealthandwellbeing.jsonld ",
+			"Schema": "factorsaffectinghealthorwellbeing.ttl",
+			"JsonLD": "factorsaffectinghealthorwellbeing.jsonld ",
 			"Map": true,
 			"Publish":
 			[
 				{
-					"Uri": "appliesToFactorAffectingHealthAndWellbeing",
-					"Label": "Lifestyle condition",
+					"Uri": "appliesToFactorsAffectingHealthOrWellbeing",
+					"Label": "Factors affecting health or wellbeing",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
@@ -119,23 +118,29 @@
 					"DataAnnotation": true
 				},
 				{
-					"Uri": "isWithdrawn",
-					"Label": "Withdrawn",
-					"Validate": true,
-					"Format": "YesNo",
-					"DataAnnotation": true,
-					"UndiscoverableWhen": "yes"
-				},
-				{
 					"Uri": "withdrawnOn",
 					"Label": "Withdrawn on",
 					"Validate": true,
-					"Format": "Date:Conditional:Withdrawn:yes",
+					"Format": "Date",
 					"DataAnnotation": true,
+					"UndiscoverableWhen": "*Populated*",
 					"Display": {
-						"Condition": "Withdrawn:yes",
+						"Always": true,
 						"Label": "<div class='withdrawn-label'>This statement has been withdrawn</div>",
 						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }}</div>"
+					}
+				},
+				{
+					"Uri": "isReplacedBy",
+					"Label": "Replaced by",
+					"Validate": true,
+					"Format": "Statement",
+					"DataAnnotation": true,
+					"UndiscoverableWhen": "*Populated*",
+					"Display": {
+						"Always": true,
+						"Label": "<div class='replaced-label'>This statement has been replaced by</div>",
+						"Template": "<div class='replaced-message'><a href='{{value}}'>this statement</a></div>"
 					}
 				},
 				{
@@ -154,7 +159,7 @@
 					"Display": {
 						"Condition": "National priority:no",
 						"Label": "National priority",
-						"Template": "<b>In {{value |  date: \"MMMM yyyy\" }} the priority of this statement changed. It is no longer considered a national priority for improvement but may still be useful at a local level.</b>"
+						"Template": "<b>In {{value |  date: \"MMMM yyyy\" }} the priority of this statement changed.<br>It is no longer considered a national priority for improvement but may still be useful at a local level.</b>"
 					},
 					"DataAnnotation": true
 				},
